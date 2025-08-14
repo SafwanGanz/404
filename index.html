@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Temporarily Unavailable - 404</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            padding: 40px 20px;
+        }
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: 300;
+            color: #666666;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            color: #222222;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .message {
+            font-size: 1rem;
+            color: #666666;
+            margin-bottom: 30px;
+        }
+
+        .message p {
+            margin-bottom: 15px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background-color: #e0e0e0;
+            margin: 30px auto;
+        }
+
+        .status-info {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .status-info h3 {
+            color: #333333;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .status-info p {
+            color: #666666;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .status-info p:last-child {
+            margin-bottom: 0;
+        }
+
+        .status-label {
+            font-weight: 500;
+            color: #333333;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 15px;
+            }
+            
+            .error-code {
+                font-size: 4.5rem;
+            }
+            
+            .title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1 class="title">Service Temporarily Unavailable</h1>
+        
+        <div class="message">
+            <p><strong>Payment Not Received</strong></p>
+            <p>This website has been temporarily shut down due to non-payment by the client. Services will be restored once outstanding payments are settled.</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="status-info">
+            <h3>Payment Status</h3>
+            <p><span class="status-label">Reason:</span> Client payment overdue</p>
+            <p><span class="status-label">Action required:</span> Payment settlement needed</p>
+            <p><span class="status-label">Contact:</span> Please reach out to resolve payment</p>
+        </div>
+    </div>
+</body>
+</html>
